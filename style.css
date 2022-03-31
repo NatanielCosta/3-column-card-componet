@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: arial;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(0, 0%, 95%);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  margin: 8rem auto;
+}
+
+.container_card {
+  padding: 5rem;
+}
+
+.card-sedans {
+  background: hsl(31, 77%, 52%);
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+}
+
+.card-suvs {
+  background: hsl(184, 100%, 22%);
+}
+
+.card-luxury {
+  background: hsl(179, 100%, 13%);
+  border-bottom-left-radius: .8rem;
+  border-bottom-right-radius: .8rem;
+}
+
+.container_card-heading {
+  font-size: 3rem;
+  color: hsl(0, 0%, 95%);
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+
+.container_card-paragraph {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 2.4rem;
+  width: 85%;
+}
+
+.container_card-btn {
+  display: inline-block;
+  margin-top: 3rem;
+  background: hsl(0, 0%, 95%);
+  padding: 1.25rem 3rem;
+  border: none;
+  border-radius: 2.6rem;
+  border: .2rem solid hsl(0, 0%, 95%);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.container_card-btn:hover {
+  background: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+
+.btn-sedans {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center; 
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 910px) {
+
+  .container {
+    flex-direction: row;
+    margin: auto;
+    width: auto;
+  }
+
+  .container_card{
+    width: 30rem;
+    padding: 5rem 3rem;
+    border-radius: 0
+  }
+
+  .container_card-paragraph {
+    width: 70%;
+  }
+
+  .card-sedans {
+    border-top-left-radius: .8rem;
+    border-bottom-left-radius: .8rem;
+  }
+
+  .card-luxury {
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+  }
+
+  .container_card-btn {
+    margin-top: 8rem;
+  }
+}
